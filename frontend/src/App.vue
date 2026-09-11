@@ -681,6 +681,7 @@ const menuOptions = ref([
             {default: () => '基金自选',}
         ),
     show: true,
+    
     key: 'fund',
     icon: renderIcon(SparklesOutline),
     children: [
