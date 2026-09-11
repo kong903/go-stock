@@ -46,7 +46,7 @@ const loading = ref(true)
 const loadingMsg = ref("加载数据中...")
 const enableNews = ref(false)
 const contentStyle = ref("")
-const enableFund = ref(false)
+const enableFund = ref(true)
 const enableAgent = ref(false)
 const enableDarkTheme = ref(darkTheme)
 const content = ref('未经授权,禁止商业目的!\n\n数据来源于网络,仅供参考;投资有风险,入市需谨慎')
@@ -680,7 +680,7 @@ const menuOptions = ref([
             },
             {default: () => '基金自选',}
         ),
-    show: enableFund.value,
+    show: true,
     key: 'fund',
     icon: renderIcon(SparklesOutline),
     children: [
